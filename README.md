@@ -16,5 +16,5 @@ Press **`q`** to exit.
 ### Run
 
 ```bash
-python key_detector.py
+python source-code.py
 

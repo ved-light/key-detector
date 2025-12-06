@@ -1,8 +1,7 @@
+import msvcrt as ms
+import time as t
 
 def key_detector():
-    
-    import msvcrt as ms
-    import time as t
     
     print("\nPress keys to see their representation.\nPress 'q' to quit.\n")
 
@@ -11,17 +10,23 @@ def key_detector():
         
             key=ms.getch()
         
-            if key == b'\t': b="TAB"
-            elif key == b'\r': b="ENTER"
-            elif key == b' ': b="SPACE"
-            elif key==b'\x1b': b="ESCAPE"
-            elif key==b'\x08': b="BACKSPACE"
-
+            if key == b'\t': 
+                key_value="TAB"
+            elif key == b'\r': 
+                key_value="ENTER"
+            elif key == b' ': 
+                key_value="SPACE"
+            elif key==b'\x1b': 
+                key_value="ESCAPE"
+            elif key==b'\x08': 
+                key_value="BACKSPACE"
             else:
-                try: b=key.decode()
-                except: b=str(key)
+                try: 
+                    key_value=key.decode()
+                except: 
+                    key_value=str(key)
             
-            msg="Key pressed: "+ b
+            msg = f"key pressed: {key_value}"
             
             for i in msg:
                 t.sleep(0.02)
@@ -30,7 +35,7 @@ def key_detector():
             print()
 
             if key==b'q':
-                print("Exiting...")
+                print("\nExiting...\n")
                 break
             
 if __name__ == "__main__":
