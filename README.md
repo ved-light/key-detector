@@ -1,2 +1,20 @@
 # key-detector
-A simple Python tool that detects keyboard input in real time using msvcrt. Shows readable names for special keys (Enter, Tab, Backspace, Space, Escape) and prints a typing-animation output. Press q to exit. Windows-only.
+
+A small Python script that prints key presses in real time using `msvcrt`.  
+Special keys like `ENTER`, `TAB`, `BACKSPACE`, `SPACE`, and `ESCAPE` are detected and labeled.  
+Press **`q`** to exit.
+
+---
+
+### Requirements
+
+- Windows  
+- Python 3.x
+
+---
+
+### Run
+
+```bash
+python key_detector.py
+
