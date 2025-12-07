@@ -16,8 +16,5 @@ Press **`q`** to exit.
 ### Run
 
 ```bash
-pip install windows-curses
-
-
 python source-code.py
 
