@@ -15,9 +15,9 @@ Press **`q`** to exit.
 
 ### Run
 
-```install msvcrt
+```bash
 pip install windows-curses
 
-```bash
+
 python source-code.py
 
